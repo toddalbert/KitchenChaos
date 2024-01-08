@@ -749,6 +749,9 @@ MonoBehaviour:
   playerRadius: 0.7
   interactDistance: 2
   gameInput: {fileID: 2076644456}
+  countersLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!4 &894116667
 Transform:
   m_ObjectHideFlags: 0
