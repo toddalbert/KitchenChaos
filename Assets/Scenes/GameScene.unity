@@ -1061,6 +1061,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9113740185695292956, guid: 8a0bf743ee6ed4ca5813818448f7f451,
+        type: 3}
+      propertyPath: tomatoPrefab
+      value: 
+      objectReference: {fileID: 4659318495650082844, guid: 6bc04893c76f74301a8d37ac234e9d14,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
