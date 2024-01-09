@@ -123,6 +123,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &148606708 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9113740185695292956, guid: 8a0bf743ee6ed4ca5813818448f7f451,
+    type: 3}
+  m_PrefabInstance: {fileID: 474990514}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0642a98b48644b4a4342efdd2ec116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &288343372
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +672,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9113740185695292956, guid: 8a0bf743ee6ed4ca5813818448f7f451,
+        type: 3}
+      propertyPath: testing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9113740185695292956, guid: 8a0bf743ee6ed4ca5813818448f7f451,
+        type: 3}
+      propertyPath: kitchenObjectSO
+      value: 
+      objectReference: {fileID: 11400000, guid: c7f9909cdeabf4f6b92c3a7d461a555c,
+        type: 2}
+    - target: {fileID: 9113740185695292956, guid: 8a0bf743ee6ed4ca5813818448f7f451,
+        type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 1915597956}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -752,6 +780,7 @@ MonoBehaviour:
   countersLayerMask:
     serializedVersion: 2
     m_Bits: 8
+  kitchenObjectHoldPoint: {fileID: 1360415493}
 --- !u!4 &894116667
 Transform:
   m_ObjectHideFlags: 0
@@ -766,6 +795,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 473035690}
+  - {fileID: 1360415493}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1343530468 stripped
@@ -787,6 +817,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 894116666}
+--- !u!1 &1360415492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1360415493}
+  m_Layer: 0
+  m_Name: HoldPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1360415493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360415492}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.3, z: 0.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 894116667}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1420509204
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,6 +1015,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1915597956 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9113740185695292956, guid: 8a0bf743ee6ed4ca5813818448f7f451,
+    type: 3}
+  m_PrefabInstance: {fileID: 5353358123402811258}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0642a98b48644b4a4342efdd2ec116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2076644455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,10 +1136,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9113740185695292956, guid: 8a0bf743ee6ed4ca5813818448f7f451,
         type: 3}
+      propertyPath: testing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9113740185695292956, guid: 8a0bf743ee6ed4ca5813818448f7f451,
+        type: 3}
       propertyPath: tomatoPrefab
       value: 
       objectReference: {fileID: 4659318495650082844, guid: 6bc04893c76f74301a8d37ac234e9d14,
         type: 3}
+    - target: {fileID: 9113740185695292956, guid: 8a0bf743ee6ed4ca5813818448f7f451,
+        type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 148606708}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
