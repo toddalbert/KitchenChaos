@@ -22,13 +22,16 @@ public class CuttingCounter : BaseCounter {
       // can take an object
       if (player.HasKitchenObject()) {
         // transfer object to counter
-        player.GetKitchenObject().SetKitchenObjectParent(this);
-        cuttingProgress = 0;
-        CuttingRecipeSO cuttingRecipeSO = GetCuttingRecipeSOWithInput(GetKitchenObject().GetKitchenObject());
+        if(HasRecipeWithInput(player.GetKitchenObject().GetKitchenObject())) {
+          // Player has something that can be cut
+          player.GetKitchenObject().SetKitchenObjectParent(this);
+          cuttingProgress = 0;
+          CuttingRecipeSO cuttingRecipeSO = GetCuttingRecipeSOWithInput(GetKitchenObject().GetKitchenObject());
 
-        OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs {
-          progressNormalized = (float)cuttingProgress / cuttingRecipeSO.cuttingCount
-        });
+          OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs {
+            progressNormalized = (float)cuttingProgress / cuttingRecipeSO.cuttingCount
+          });
+        }
       } else {
         // player not carrying anything
       }
