@@ -51,5 +51,11 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "KitchenChaos.sln"
+    "dotnet.defaultSolution": "KitchenChaos.sln",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#083140",
+        "titleBar.activeBackground": "#0B4559",
+        "titleBar.activeForeground": "#F7FCFE"
+    },
+    "dotnet.preferCSharpExtension": true
 }
