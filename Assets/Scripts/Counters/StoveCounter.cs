@@ -132,6 +132,7 @@ public class StoveCounter : BaseCounter, IHasProgress {
               progressNormalized = 0f
             });
           }
+        }
       } else {
         // player not carrying anything
         GetKitchenObject().SetKitchenObjectParent(player);
